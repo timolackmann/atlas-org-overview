@@ -3,7 +3,7 @@
     "name": "auditReport",
     "type": "SCHEDULED",
     "config": {
-        "schedule": "1 */1 * * *",
+        "schedule": "*/1 */1 * * *",
         "skip_catchup_events": false
     },
     "disabled": false,
