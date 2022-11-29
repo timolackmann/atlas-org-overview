@@ -1,0 +1,17 @@
+{
+    "id": "61b7b01d68981b2077327300",
+    "name": "auditReport",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "0 */1 * * *",
+        "skip_catchup_events": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "createReport"
+            }
+        }
+    }
+}
