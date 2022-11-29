@@ -1,5 +1,7 @@
 exports = async function(){
   
+  console.log('start audit');
+  
   const mongodb = context.services.get("mongodb-atlas");
   const auditCollection = mongodb.db("audits").collection("reports");  
   var projects = await context.functions.execute('getProjects');
