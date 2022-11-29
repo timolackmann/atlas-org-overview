@@ -1,4 +1,6 @@
 exports = async function(projectId) {
+  
+  console.log('start project listing');
   const apiCall = await context.functions.execute('getApiTemplate','clusterList',projectId);
   response = await context.http.get(apiCall);
   const returnBody = EJSON.parse(response.body.text());
