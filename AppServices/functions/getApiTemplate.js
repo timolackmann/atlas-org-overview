@@ -1,6 +1,8 @@
 exports = function(purpose,projectId=""){
 
 
+  console.log('get API request template');
+  
   // Get stored credentials...
   const username = context.values.get("AtlasPublicKey");
   const password = context.values.get("AtlasPrivateKey");

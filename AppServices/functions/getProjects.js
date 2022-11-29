@@ -1,4 +1,7 @@
 exports = async function() {
+  
+  console.log('get existing projects');
+  
   const apiCall = await context.functions.execute('getApiTemplate', 'projectList');
   response = await context.http.get(apiCall);
   const returnBody = EJSON.parse(response.body.text());
