@@ -18,7 +18,7 @@ exports = function(purpose,projectId=""){
       resourcePath = "api/atlas/v1.0/groups/";
       break;
     case 'ldapConfig':
-      resourcePath = "api/atlas/v1.0/groups/"+ projectId + "/userSecurity"
+      resourcePath = "api/atlas/v1.0/groups/"+ projectId + "/userSecurity";
     default:
       return {'err':'missing purpose'};
   }
