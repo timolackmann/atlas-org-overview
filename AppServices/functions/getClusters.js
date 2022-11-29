@@ -4,6 +4,8 @@ exports = async function(projectId) {
   const returnBody = EJSON.parse(response.body.text());
   var clusters = [];
   
+  console.log(returnBody)
+  
   returnBody.results.forEach(function (cluster) {
     clusters.push({
       "name": cluster.name, 

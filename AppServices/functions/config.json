@@ -1,32 +1,32 @@
 [
-  {
-    "name": "createReport",
-    "private": true,
-    "run_as_system": true
-  },
-  {
-    "name": "getApiTemplate",
-    "private": true,
-    "run_as_system": true
-  },
-  {
-    "name": "getClusters",
-    "private": true,
-    "run_as_system": true
-  },
-  {
-    "name": "getProjects",
-    "private": true,
-    "run_as_system": true
-  },
-  {
-    "name": "getScramUsers",
-    "private": true,
-    "run_as_system": true
-  },
-  {
-    "name": "getLdapStatus",
-    "private": true,
-    "run_as_system": true
-  }
+    {
+        "name": "createReport",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "getApiTemplate",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "getClusters",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "getLdapStatus",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "getProjects",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "getScramUsers",
+        "private": true,
+        "run_as_system": true
+    }
 ]
