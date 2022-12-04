@@ -14,5 +14,13 @@ exports = async function(projectId) {
     ldapUsers.push({"username":user.username});
   });
 
-  return {"scram":scramUsers,"ldap":ldapUsers}; 
-};
+  return {
+          "scram":{
+            "count": scramUsers.length, 
+            "users":scramUsers},
+          "ldap":{
+            "count": ldapUsers.length,
+            "users": ldapUsers
+          }
+          }
+}
