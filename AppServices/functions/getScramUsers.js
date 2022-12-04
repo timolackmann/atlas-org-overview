@@ -4,10 +4,10 @@ exports = async function(projectId) {
   const returnBody = EJSON.parse(response.body.text());
   var scramUsers = [];
   
-  returnBody.results.forEach(function (user) {
+  /***returnBody.results.forEach(function (user) {
     if (user.awsIAMType == "NONE" && user.ldapAuthType == "NONE" && user.x509Type == "NONE" && !user.username.startsWith('mongodb-realm'))
     scramUsers.push({"username": user.username});
-  });
+  });**/
 
-  return scramUsers; 
+  return returnBody.results; 
 };
