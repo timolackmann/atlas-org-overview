@@ -4,6 +4,8 @@ exports = async function(projectId) {
   const returnBody = EJSON.parse(response.body.text());
   var scramUsers = [];
   var ldapUsers = [];
+
+//return users by ldap and scram users
   
   returnBody.results.forEach(function (user) {
     if (user.awsIAMType == "NONE" && user.ldapAuthType == "NONE" && user.x509Type == "NONE" && !user.username.startsWith('mongodb-realm'))
