@@ -10,10 +10,6 @@ exports = async function(projectId) {
   //console.log(attrNames);
   console.log(returnBody.results);
   
-  if (returnBody.results.totalCount = 0){
-    return {};
-  }
-  
   returnBody.results.forEach(function (alert) {
     alerts.push({
       "eventTypeName": alert.eventTypeName, 
