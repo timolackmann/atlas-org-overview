@@ -8,6 +8,7 @@ exports = async function(){
   var projects = [];
   
   for (var org in orgs){
+    console.log("retrieving projects for organization " + org)
     projects[org] = await context.functions.execute('getProjects');
   } 
   
