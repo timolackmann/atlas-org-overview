@@ -5,7 +5,7 @@ exports = async function(){
   const mongodb = context.services.get("mongodb-atlas");
   const auditCollection = mongodb.db("audits").collection("reports");
   const orgs = context.values.get("orgList");
-  
+  console.log(typeof orgs);
   console.log("org list is "+ orgs);
   var projects = [];
   
