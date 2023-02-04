@@ -2,6 +2,7 @@ exports = async function(projectId) {
   
   console.log('get project alerts');
   const apiCall = await context.functions.execute('getApiTemplate','getAlerts',projectId);
+  apiCall["queryParam"] = "status=OPEN";
   response = await context.http.get(apiCall);
   const returnBody = EJSON.parse(response.body.text());
   var alerts = [];
