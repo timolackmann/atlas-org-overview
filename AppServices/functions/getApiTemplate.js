@@ -28,7 +28,6 @@ exports = function(purpose,id=""){
       return {'err':'missing purpose'};
   }
   
-  console.log(path);
   return { 
     scheme: 'https', 
     host: 'cloud.mongodb.com', 
