@@ -10,7 +10,6 @@ exports = async function(){
   for (var i in orgs){
     console.log("retrieving projects for organization " + orgs[i]);
     projects[orgs[i]] = await context.functions.execute('getProjects');
-  } 
   
   
     for (var project of projects){
@@ -19,10 +18,11 @@ exports = async function(){
       project.users = await context.functions.execute('getScramUsers',project.id);
       //project.ldapEnabled = await context.functions.execute('getLdapStatus',project.id);
     }
+  }
 
    const auditReport = {
     "auditDate": Date.now(),
-    "projects": projects
+    "clusters": projects
     }
 
     auditCollection.insertOne(auditReport); 
