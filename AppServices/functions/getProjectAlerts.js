@@ -16,5 +16,5 @@ exports = async function(projectId) {
     });
   });
 
-  return clusters; 
+  return alerts; 
 };
