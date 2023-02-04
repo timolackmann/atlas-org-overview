@@ -6,6 +6,8 @@ exports = async function(projectId) {
   const returnBody = EJSON.parse(response.body.text());
   var alerts = [];
   
+  console.log(returnBody.totalCount);
+  
   if (returnBody.totalCount = 0){
     return {};
   }
