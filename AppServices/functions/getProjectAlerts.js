@@ -8,7 +8,7 @@ exports = async function(projectId) {
   
  const attrNames = Object.keys(returnBody);
   console.log(attrNames);
-  console.log(returnBody.results);
+  console.log(returnBody.detail);
   
   returnBody.results.forEach(function (alert) {
     alerts.push({
