@@ -1,4 +1,4 @@
-exports = function(purpose,projectId=""){
+exports = function(purpose,id=""){
 
 
   console.log('get API request template');
@@ -11,17 +11,19 @@ exports = function(purpose,projectId=""){
   //build path based on purpose
   switch(purpose) {
     case 'clusterList':
-      resourcePath = "api/atlas/v1.0/groups/"+ projectId + "/clusters";
+      resourcePath = "api/atlas/v1.0/groups/"+ id + "/clusters";
       break;
     case 'userList':
-      resourcePath = "api/atlas/v1.0/groups/"+ projectId + "/databaseUsers";
+      resourcePath = "api/atlas/v1.0/groups/"+ id + "/databaseUsers";
       break;
     case 'projectList':
       resourcePath = "api/atlas/v1.0/groups/";
       break;
     case 'ldapConfig':
-      resourcePath = "api/atlas/v1.0/groups/"+ projectId + "/userSecurity";
+      resourcePath = "api/atlas/v1.0/groups/"+ id + "/userSecurity";
       break;
+    case 'orgProjects':
+      resourcePath = "api/atlas/v1.0/"+ id + "/groups"
     default:
       return {'err':'missing purpose'};
   }
