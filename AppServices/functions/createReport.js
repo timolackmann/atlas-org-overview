@@ -3,8 +3,14 @@ exports = async function(){
   console.log('start audit');
   
   const mongodb = context.services.get("mongodb-atlas");
-  const auditCollection = mongodb.db("audits").collection("reports");  
-  var projects = await context.functions.execute('getProjects');
+  const auditCollection = mongodb.db("audits").collection("reports");
+  const orgs = context.values.get("orgList");
+  var projects = [];
+  
+  for (var org in orgs){
+    projects[org] = await context.functions.execute('getProjects');
+  } 
+  
   
     for (var project of projects){
       project.clusters = await context.functions.execute('getClusters',project.id);
