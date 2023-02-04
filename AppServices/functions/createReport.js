@@ -12,7 +12,7 @@ exports = async function(){
     projects[orgs[i]] = await context.functions.execute('getProjects');
   
   
-    for (var project of projects){
+    for (var project of projects[orgs[i]]){
       project.clusters = await context.functions.execute('getClusters',project.id);
       project['clusterCount'] = project.clusters.length;
       project.users = await context.functions.execute('getScramUsers',project.id);
