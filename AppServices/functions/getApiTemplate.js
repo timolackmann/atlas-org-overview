@@ -25,6 +25,8 @@ exports = function(purpose,id=""){
     case 'orgProjects':
       resourcePath = "api/atlas/v1.0/orgs/"+ id + "/groups";
       break;
+    case 'getAlerts':
+      resourcePath = "api/atlas/v1.0/groups/"+ id + "/alerts"
     default:
       return {'err':'missing purpose'};
   }

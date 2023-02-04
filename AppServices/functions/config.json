@@ -34,5 +34,11 @@
         "private": true,
         "run_as_system": true,
         "disable_arg_logs": true
+    },
+    {
+        "name": "getProjectAlerts",
+        "private": true,
+        "run_as_system": true,
+        "disable_arg_logs": true
     }
 ]
