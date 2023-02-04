@@ -5,6 +5,9 @@ exports = async function(orgs) {
   for (var i in orgs){
     console.log('get existing projects for org '+orgs[i]);
     const apiCall = await context.functions.execute('getApiTemplate', 'orgProjects', orgs[i]);
+    
+    console.log(apiCall);
+    
     response = await context.http.get(apiCall);
     const returnBody = EJSON.parse(response.body.text());
     returnBody.results.forEach(function (project) {
