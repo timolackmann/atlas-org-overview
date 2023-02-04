@@ -23,7 +23,7 @@ exports = async function(){
 
    const auditReport = {
     "auditDate": Date.now(),
-    "clusters": projects
+    "projects": projects
     }
 
     auditCollection.insertOne(auditReport); 

@@ -21,7 +21,9 @@ exports = async function(projectId) {
         "pitEnabled": cluster.pitEnabled
       },
       "mongodbMajorVersion": cluster.mongoDBMajorVersion,
-      "paused": cluster.paused
+      "paused": cluster.paused,
+      "orgName": cluster.orgName,
+      "orgId": cluster.orgId
     });
   });
 
