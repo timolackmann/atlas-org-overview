@@ -6,7 +6,7 @@ exports = async function(){
   const auditCollection = mongodb.db("audits").collection("reports");
   const orgs = context.values.get("orgList");
 
-  if (orgs.length > 0){
+  if (org != undefined && orgs.length > 0){
     for (var i in orgs){
       var projects = await context.functions.execute('getOrgsProjects', orgs);
     }
