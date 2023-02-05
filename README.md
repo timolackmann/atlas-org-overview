@@ -44,8 +44,9 @@ open MongoDB Charts to import the dashboard.
 
 1. Install the following prerequisites on your computer if they aren't already
    present:
-   _ [Git](https://git-scm.com/downloads)
-   _ [Node.js](https://nodejs.org/en/download/) \* [MongoDB Realm CLI](https://www.mongodb.com/docs/atlas/app-services/cli/)
+   * [Git](https://git-scm.com/downloads)
+   * [Node.js](https://nodejs.org/en/download/) 
+   * [MongoDB Realm CLI](https://www.mongodb.com/docs/atlas/app-services/cli/)
 2. Clone this repo to an appropriate directory on your computer:
    ```
    git clone https://github.com/timolackmann/atlas-org-overview.git
