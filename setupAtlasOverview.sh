@@ -33,7 +33,7 @@ echo "Enter the PUBLIC Key for your ORGANIZATION level API Key:"
 read publicKeyOrg
 echo "Enter the PRIVATE Key for your ORGANIZATION level API Key:"
 read privateKeyOrg
-echo "Enter the name of the running Atlas cluster that will store the billing data:"
+echo "Enter the name of the running Atlas cluster that will store the report data:"
 read clusterName
 
 echo "Thanks....."
