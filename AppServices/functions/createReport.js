@@ -17,7 +17,7 @@ exports = async function(){
   for (var project of projects){
     project.clusters = await context.functions.execute('getClusters',project.id);
     project['clusterCount'] = project.clusters.length;
-    project.users = await context.functions.execute('getScramUsers',project.id);
+    //project.users = await context.functions.execute('getScramUsers',project.id);
     project.alerts = await context.functions.execute('getProjectAlerts', project.id);
     //project.ldapEnabled = await context.functions.execute('getLdapStatus',project.id);
   }
