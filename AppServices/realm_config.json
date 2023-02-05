@@ -1,8 +1,7 @@
 {
-    "app_id": "org-management-obbiq",
     "config_version": 20210101,
+    "app_id": "org-management-ykxgo",
     "name": "org-management",
     "location": "DE-FF",
-    "provider_region": "aws-eu-central-1",
     "deployment_model": "LOCAL"
 }
