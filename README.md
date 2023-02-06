@@ -116,6 +116,7 @@ can view and update the deployed app by clicking the **App Services** tab on the
 - In progress: Enable monitoring across multiple organizations
 - In progress: Include LDAP database user configuration
 - In consideration: Include if KMS is configured
+- In consideration: Include API Keys overview
 
 # Documentation Links
 
