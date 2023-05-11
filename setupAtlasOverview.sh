@@ -67,6 +67,7 @@ realm-cli push --remote "org-management" -y --local ./AppServices
 echo "Please wait a few seconds before we run the createReport function ..."
 
 sleep 30
+realm-cli function run --name "initDatabase"
 realm-cli function run --name "createReport"
 
 # Next Steps
