@@ -1,8 +1,9 @@
 {
-    "app_id": "org-management-obbiq",
+    "app_id": "application-0-rgdgy",
     "config_version": 20210101,
-    "name": "org-management",
+    "name": "Application-0",
     "location": "DE-FF",
     "provider_region": "aws-eu-central-1",
-    "deployment_model": "LOCAL"
+    "deployment_model": "LOCAL",
+    "environment": "testing"
 }
