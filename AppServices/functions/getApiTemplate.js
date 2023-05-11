@@ -4,8 +4,8 @@ exports = function(purpose,id=""){
   console.log('get API request template');
   console.log(purpose);
   // Get stored credentials...
-  const username = context.values.get("AtlasPublicKey");
-  const password = context.values.get("AtlasPrivateKey");
+  const username = context.values.get("publicKey");
+  const password = context.values.get("privateKey");
   var resourcePath = '';
   
   //build path based on purpose
