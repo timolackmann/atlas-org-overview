@@ -7,13 +7,12 @@ exports = async function(){
     const auditCollection = auditDatabase.collection("reports");
 
     //create view for the latest report and unwind the projects array
-    await auditDatabase.createView(
-        "latestReport",
-        "reports",
-        [
-            { $sort: { auditDate: -1 } },
-            { $limit: 1 },
-            { $unwind: "$projects" }
+    await auditDatabase.createCollection("latestReport", {
+        viewOn: "reports",
+        pipeline: [
+            {$sort: {auditDate: -1}},
+            {$limit: 1},
+            {$unwind: "$projects"}
         ]
-    );
+    });
   };
